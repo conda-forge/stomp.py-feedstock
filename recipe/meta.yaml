@@ -1,5 +1,5 @@
 {% set name = "stomp.py" %}
-{% set version = "4.1.22" %}
+{% set version = "5.0.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d28120d902dcb81274cf78bd269dfbdfe2b20ea5ae5b33d90b56a32e8c18abe2
+  sha256: 5adbc6629da25717f65bfdcb19358e819bbc3c7974e4d59c5bd67389b17f6840
 
 build:
   number: 0
