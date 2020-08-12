@@ -10,7 +10,7 @@ Feedstock license: BSD-3-Clause
 Summary: Python STOMP client, supporting versions 1.0, 1.1 and 1.2 of the protocol
 
 "stomp.py" is a Python client library for accessing messaging servers
-(such as ActiveMQ, Apollo or RabbitMQ) using the STOMP protocol
+(such as ActiveMQ, Artemis or RabbitMQ) using the STOMP protocol
 (STOMP v1.0, STOMP v1.1 and STOMP v1.2).
 It can also be run as a standalone, command-line client for testing.
 
