@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - pip
+    - poetry
     - python
   run:
     - docopt >=0.6.2
