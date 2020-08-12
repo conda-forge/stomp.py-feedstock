@@ -121,4 +121,5 @@ Feedstock Maintainers
 =====================
 
 * [@anthchirp](https://github.com/anthchirp/)
+* [@deepsworld](https://github.com/deepsworld/)
 
