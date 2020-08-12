@@ -1,20 +1,20 @@
 {% set name = "stomp.py" %}
-{% set version = "4.1.23" %}
+{% set version = "6.1.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 883088b12aaf5510176e50d3dc3b2d9f2cf2f50cb88325d832295f9ed5e5fc58
+  sha256: 1f6c7e1e5089b1d8a75161e66533cabb9895de5121cc3900cb7e12c41c1bda18
 
 build:
   number: 0
   entry_points:
     - stomp = stomp.__main__:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
