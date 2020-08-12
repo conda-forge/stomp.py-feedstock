@@ -1,5 +1,5 @@
 {% set name = "stomp.py" %}
-{% set version = "4.1.22" %}
+{% set version = "6.1.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d28120d902dcb81274cf78bd269dfbdfe2b20ea5ae5b33d90b56a32e8c18abe2
+  sha256: 1f6c7e1e5089b1d8a75161e66533cabb9895de5121cc3900cb7e12c41c1bda18
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python
+    - poetry
   run:
     - docopt >=0.6.2
     - python
@@ -48,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - anthchirp
+    - deepsworld
