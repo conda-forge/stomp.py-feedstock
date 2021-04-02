@@ -5,9 +5,13 @@ Home: https://github.com/jasonrbriggs/stomp.py
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stomp.py-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python STOMP client, supporting versions 1.0, 1.1 and 1.2 of the protocol
+
+Development: https://github.com/jasonrbriggs/stomp.py
+
+Documentation: https://jasonrbriggs.github.io/stomp.py/
 
 "stomp.py" is a Python client library for accessing messaging servers
 (such as ActiveMQ, Artemis or RabbitMQ) using the STOMP protocol
@@ -112,9 +116,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
