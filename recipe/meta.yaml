@@ -20,17 +20,20 @@ requirements:
   host:
     - pip
     - poetry
-    - python
+    - python >=3.6,<4.0
   run:
-    - docopt >=0.6.2
-    - python
+    - docopt >=0.6.2,<0.7.0
+    - python >=3.6,<4.0
 
 test:
   imports:
     - stomp
     - stomp.adapter
   commands:
+    - pip check
     - stomp --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/jasonrbriggs/stomp.py
