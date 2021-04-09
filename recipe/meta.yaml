@@ -1,36 +1,39 @@
 {% set name = "stomp.py" %}
-{% set version = "6.1.0" %}
+{% set version = "7.0.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1f6c7e1e5089b1d8a75161e66533cabb9895de5121cc3900cb7e12c41c1bda18
+  sha256: fb301f338292b1b95089c6f1d3a38a9dd8353a5ff3f921e389dfa5f9413b5a8a
 
 build:
   number: 0
   entry_points:
     - stomp = stomp.__main__:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - poetry
-    - python
+    - python >=3.6,<4.0
   run:
-    - docopt >=0.6.2
-    - python
+    - docopt >=0.6.2,<0.7.0
+    - python >=3.6,<4.0
 
 test:
   imports:
     - stomp
     - stomp.adapter
   commands:
+    - pip check
     - stomp --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/jasonrbriggs/stomp.py
