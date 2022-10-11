@@ -10,7 +10,7 @@ source:
   sha256: d2bc55b4596604feb51d56895d93431ff8ee159b31b28d9038a2310777bbd3fa
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - stomp = stomp.__main__:main
   noarch: python
@@ -24,7 +24,6 @@ requirements:
   run:
     - docopt >=0.6.2,<0.7.0
     - python >=3.6,<4.0
-    - pyopenssl >=20.0.1,<21.0.0
 
 test:
   imports:
