@@ -1,13 +1,13 @@
 {% set name = "stomp.py" %}
-{% set version = "8.1.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4737d002684639753fbf12dedecb8aa85e5e260749c947acd49c482db42a594
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stomp_py-{{ version }}.tar.gz
+  sha256: 9908689361e263bf198e6acfb3c4386759fb7df7d141f4384d7414771c68d7fc
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   run:
     - docopt >=0.6.2,<0.7.0
     - python >=3.6,<4.0
+    - websocket-client
 
 test:
   imports:
