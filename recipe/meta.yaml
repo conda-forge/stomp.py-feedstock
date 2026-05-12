@@ -1,13 +1,13 @@
 {% set name = "stomp.py" %}
-{% set version = "8.2.0" %}
+{% set version = "9.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stomp_py-{{ version }}.tar.gz
-  sha256: 9908689361e263bf198e6acfb3c4386759fb7df7d141f4384d7414771c68d7fc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stomp_py-{{ version }}.tar.gz
+  sha256: 77b63fdd6cb2fb5e3d7032c5e1cde70c005f498d6096b77827efe71913196464
 
 build:
   number: 0
